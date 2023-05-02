@@ -1,4 +1,4 @@
-package pl.zeto.koszalin.functionalities;
+package com.example.application.functionalities;
 
 import java.util.ArrayList;
 import java.util.Calendar;

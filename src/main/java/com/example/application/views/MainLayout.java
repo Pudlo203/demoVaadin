@@ -5,7 +5,9 @@ import com.example.application.components.appnav.AppNavItem;
 import com.example.application.data.entity.User;
 import com.example.application.security.AuthenticatedUser;
 import com.example.application.views.about.AboutView;
-import com.example.application.views.adminform.AdminFormView;
+import com.example.application.views.dialogs.Zad;
+import com.example.application.views.newPage.NewPage;
+import com.example.application.views.webui.WebUI;
 import com.example.application.views.form.FormView;
 import com.example.application.views.helloworld.HelloWorldView;
 import com.vaadin.flow.component.applayout.AppLayout;
@@ -82,14 +84,18 @@ public class MainLayout extends AppLayout {
 
         }
         if (accessChecker.hasAccess(FormView.class)) {
-            nav.addItem(new AppNavItem("Form", FormView.class, LineAwesomeIcon.USER.create()));
+            nav.addItem(new AppNavItem("Form", FormView.class, LineAwesomeIcon.DASHCUBE.create()));
 
         }
-        if (accessChecker.hasAccess(AdminFormView.class)) {
-            nav.addItem(new AppNavItem("AdminForm", AdminFormView.class, LineAwesomeIcon.KISS_WINK_HEART.create()));
-
+        if (accessChecker.hasAccess(WebUI.class)) {
+            nav.addItem(new AppNavItem("WebUI", WebUI.class, LineAwesomeIcon.CREATIVE_COMMONS.create()));
         }
-
+        if (accessChecker.hasAccess(NewPage.class)) {
+            nav.addItem(new AppNavItem("NewPage", NewPage.class, LineAwesomeIcon.CREATIVE_COMMONS_ZERO.create()));
+        }
+        if (accessChecker.hasAccess(Zad.class)) {
+            nav.addItem(new AppNavItem("Zad", Zad.class, LineAwesomeIcon.ADDRESS_BOOK.create()));
+        }
         return nav;
     }
 

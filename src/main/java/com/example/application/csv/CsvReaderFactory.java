@@ -1,4 +1,4 @@
-package pl.zeto.koszalin.csv;
+package com.example.application.csv;
 
 public class CsvReaderFactory {
 

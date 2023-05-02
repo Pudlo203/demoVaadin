@@ -1,4 +1,8 @@
-package pl.zeto.koszalin.validations;
+package com.example.application.validations;
+
+import lombok.Getter;
+import lombok.Setter;
+import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,11 +12,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.apache.log4j.Logger;
-
-import lombok.Getter;
-import lombok.Setter;
 
 public class CSVFileValid {
 

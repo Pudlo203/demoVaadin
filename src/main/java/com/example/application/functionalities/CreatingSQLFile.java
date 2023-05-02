@@ -1,5 +1,9 @@
-package pl.zeto.koszalin.functionalities;
+package com.example.application.functionalities;
 
+import lombok.Getter;
+import org.apache.log4j.Logger;
+
+import javax.swing.filechooser.FileSystemView;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -10,12 +14,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-import javax.swing.filechooser.FileSystemView;
-
-import org.apache.log4j.Logger;
-
-import lombok.Getter;
-
 public class CreatingSQLFile {
 
 	private static final Logger logger = Logger.getLogger(CreatingSQLFile.class);
@@ -25,6 +23,7 @@ public class CreatingSQLFile {
 	String homeDir = FileSystemView.getFileSystemView().getHomeDirectory().toString();
 	public Path locationOfSavingFiles = Paths.get(homeDir + "Users" + File.separator + File.separator
 		+ "lachh" + File.separator + File.separator + "Desktop");
+
 
 	public void create(List<String> list, String wersjaRWA) throws IOException {
 

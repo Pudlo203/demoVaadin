@@ -1,15 +1,16 @@
-package pl.zeto.koszalin.functionalities;
+package com.example.application.functionalities;
+
+import com.example.application.csv.CsvReader;
+import com.example.application.csv.CsvReaderFactory;
+import com.example.application.validations.CSVFileValid;
+import lombok.Getter;
+import lombok.Setter;
+
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import lombok.Getter;
-import lombok.Setter;
-import pl.zeto.koszalin.csv.CsvReader;
-import pl.zeto.koszalin.csv.CsvReaderFactory;
-import pl.zeto.koszalin.validations.CSVFileValid;
 
 public class InsertingIntoRWATable {
 

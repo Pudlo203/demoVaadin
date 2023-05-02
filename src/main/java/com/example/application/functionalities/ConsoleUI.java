@@ -1,19 +1,14 @@
-package pl.zeto.koszalin.functionalities;
+package com.example.application.functionalities;
+
+import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.Properties;
 import java.util.Scanner;
-import java.util.function.Predicate;
-
-import org.apache.log4j.Logger;
-import pl.zeto.koszalin.database.DbConnection;
 
 public class ConsoleUI {
 
